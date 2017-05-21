@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    public ZZZ zzz;
 
     private float fingerStartTime = 0.0f;
     private Vector2 fingerStartPos = Vector2.zero;
@@ -21,24 +20,22 @@ public class PlayerInput : MonoBehaviour
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            //PlayerController.Instance.mainPlayer.OnTurnTop();
-            zzz.Up();
+            PlayerController.Instance.mainPlayer.OnTurnUp();
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            //PlayerController.Instance.mainPlayer.OnTurnDown();
-            zzz.Down();
+            PlayerController.Instance.mainPlayer.OnTurnDown();
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            //PlayerController.Instance.mainPlayer.OnTurnLeft();
+            PlayerController.Instance.mainPlayer.OnTurnLeft();
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            //PlayerController.Instance.mainPlayer.OnTurnRught();
+            PlayerController.Instance.mainPlayer.OnTurnRight();
         }
 #endif
 
@@ -89,13 +86,13 @@ public class PlayerInput : MonoBehaviour
                                 if (swipeType.x > 0.0f)
                                 {
                                     // MOVE RIGHT
-                                    //PlayerController.Instance.mainPlayer.OnTurnRught();
+                                    PlayerController.Instance.mainPlayer.OnTurnRight();
 
                                 }
                                 else
                                 {
                                     // MOVE LEFT
-                                    //PlayerController.Instance.mainPlayer.OnTurnLeft();
+                                    PlayerController.Instance.mainPlayer.OnTurnLeft();
                                 }
                             }
 
@@ -104,14 +101,12 @@ public class PlayerInput : MonoBehaviour
                                 if (swipeType.y > 0.0f)
                                 {
                                     // MOVE UP
-                                    //PlayerController.Instance.mainPlayer.OnTurnTop();
-                                    zzz.Up();
+                                    PlayerController.Instance.mainPlayer.OnTurnUp();
                                 }
                                 else
                                 {
                                     // MOVE DOWN
-                                    //PlayerController.Instance.mainPlayer.OnTurnDown();
-                                    zzz.Down();
+                                    PlayerController.Instance.mainPlayer.OnTurnDown();
                                 }
                             }
 

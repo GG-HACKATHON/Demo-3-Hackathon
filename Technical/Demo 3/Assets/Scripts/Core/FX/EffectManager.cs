@@ -34,6 +34,7 @@ public class EffectManager : MonoSingleton<EffectManager>
         Spawn(typeTest, locationTest);
     }
 
+#if UNITY_EDITOR
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.T))
@@ -41,4 +42,5 @@ public class EffectManager : MonoSingleton<EffectManager>
             SpawnTest();
         }
     }
+#endif
 }
