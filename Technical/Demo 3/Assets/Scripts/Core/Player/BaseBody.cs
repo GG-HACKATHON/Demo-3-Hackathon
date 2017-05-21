@@ -16,11 +16,49 @@ public class BaseBody : MonoBehaviour {
     public float range;
     public Direction dir;
 
-    private Animator anim;
+    private int number;
+    public List<PathRecorder> recorder = null;
+
+    public Animator anim;
+
+    private delegate void Action();
+    private Action Move;
+
+    private void Start()
+    {
+        Init();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            Move = TurnDown;
+        }
+        else if (Input.GetKey(KeyCode.UpArrow))
+        {
+            Move = TurnUp;
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            Move = TurnLeft;
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            Move = TurnRight;
+        }
+
+        Move();
+    }
 
     public virtual void Init()
     {
+        Move = TurnDown;
         anim = GetComponent<Animator>();
+        if (anim == null)
+        {
+            Debug.Break();
+        }
     }
 
     public virtual void TurnLeft()
@@ -63,6 +101,13 @@ public class BaseBody : MonoBehaviour {
         anim.SetBool("isDown", true);
     }
 
+    public virtual void Follow()
+    {
+        transform.position = recorder[number].position;
+        dir = recorder[number].direction;
+        number++;
+    }
+
     public virtual void OnHit(float damge)
     { }
 
@@ -71,4 +116,9 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void OnAttack()
     { }
+
+    public virtual void SetNumber(int no, int space)
+    {
+        number = no * space;
+    }
 }
