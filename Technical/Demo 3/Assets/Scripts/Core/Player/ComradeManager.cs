@@ -5,7 +5,8 @@ using UnityEngine;
 public enum ComradeType
 {
     PANDA = 0,
-    HIPPO = 1
+    HIPPO = 1,
+    ROCKMAN = 2,
 }
 public class ComradeManager : MonoSingleton<ComradeManager> {
 

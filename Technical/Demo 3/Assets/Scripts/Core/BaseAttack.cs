@@ -27,7 +27,6 @@ public class BaseAttack : MonoBehaviour {
 
     public virtual void CountDownTime()
     {
-        Debug.Log(timeCountDown);
         if (timeCountDown > 0)
             timeCountDown -= Time.deltaTime;
     }

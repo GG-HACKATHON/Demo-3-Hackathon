@@ -35,6 +35,7 @@ public class EffectManager : MonoSingleton<EffectManager>
         Instantiate(prefabs[(int)type]);
     }
 
+    
     public void ApplyEffect(TYPE_FX type, GameObject target)
     {
         temp = Instantiate(prefabs[(int)type]) as GameObject;
@@ -59,11 +60,11 @@ public class EffectManager : MonoSingleton<EffectManager>
         }
         if (Input.GetKeyDown(KeyCode.Y))
         {
-            ApplyEffect(TYPE_FX.Blink, GameObject.Find("Panda"));
+            ApplyEffect(TYPE_FX.Blink, GameObject.FindGameObjectWithTag("Player"));
         }
         else if (Input.GetKeyDown(KeyCode.F))
         {
-            ApplyEffect(TYPE_FX.FadeIn, GameObject.Find("Panda"));
+            ApplyEffect(TYPE_FX.FadeIn, GameObject.FindGameObjectWithTag("Player"));
         }
     }
 #endif

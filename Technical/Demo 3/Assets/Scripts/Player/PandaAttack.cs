@@ -43,7 +43,6 @@ public class PandaAttack : BaseAttack {
     
     void UpdatePosition()
     {
-        Debug.Log(player.dir);
         switch(player.dir)
         {
             case Direction.DOWN:

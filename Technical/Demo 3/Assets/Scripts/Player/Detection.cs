@@ -20,7 +20,6 @@ public class Detection : MonoBehaviour {
     {
         if(target.tag == "Enemy")
         {
-            Debug.Log("enemy kiaaaaaaaaaaaa");
             BasePlayerWeapon proj = Instantiate(projectile.gameObject,
                 player.gameObject.transform.position,
                 Quaternion.identity).GetComponent<BasePlayerWeapon>();

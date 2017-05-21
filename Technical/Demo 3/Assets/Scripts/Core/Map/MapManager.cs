@@ -41,6 +41,7 @@ public class MapManager : MonoSingleton<MapManager> {
         {
             this.dicModel.Add(map.type, map);
         }
+        StartCoroutine(CreateMap());
     }
     MAPTYPE TypeByColRow(int row, int col)
     {
