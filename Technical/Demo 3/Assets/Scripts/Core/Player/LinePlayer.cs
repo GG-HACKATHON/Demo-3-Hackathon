@@ -20,33 +20,32 @@ public class LinePlayer : MonoBehaviour {
     public GameObject prefab;
 
     List<GameObject> bodies = new List<GameObject>();
-    List<PathRecorder> recorder = new List<PathRecorder>();
+    public List<PathRecorder> recorder = new List<PathRecorder>();
 
     private void Update()
     {
         Record();
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             OnTurnDown();
         }
-        else if (Input.GetKey(KeyCode.UpArrow))
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             OnTurnUp();
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             OnTurnLeft();
         }
-        else if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             OnTurnRight();
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKeyDown(KeyCode.A))
         {
             AddBody(bodies.Count);
         }
-
     }
 
     public virtual void Init()
@@ -82,8 +81,8 @@ public class LinePlayer : MonoBehaviour {
     {
         GameObject body = (GameObject)Instantiate(prefab, transform);
         BaseBody baseBody = body.GetComponent<BaseBody>();
-        baseBody.recorder = this.recorder;
-        baseBody.SetNumber(number, 25);
+        baseBody.line = this;
+        baseBody.SetNumber(number, 1);
         baseBody.Turn(Direction.FOLLOW);
     }
 

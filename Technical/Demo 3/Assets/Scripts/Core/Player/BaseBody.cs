@@ -9,7 +9,7 @@ public enum Direction
     LEFT = 3,
     RIGHT = 4
 }
-//cac item cua player se ke thua lop nay
+
 public class BaseBody : MonoBehaviour {
 
     public float hp;
@@ -18,7 +18,7 @@ public class BaseBody : MonoBehaviour {
     public Direction dir;
 
     private int number;
-    public List<PathRecorder> recorder = null;
+    public LinePlayer line;
 
     protected Animator anim;
 
@@ -94,8 +94,8 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void Follow()
     {
-        transform.position = recorder[number].position;
-        dir = recorder[number].direction;
+        transform.position = line.recorder[number].position;
+        dir = line.recorder[number].direction;
         number++;
     }
 
@@ -110,7 +110,8 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void SetNumber(int no, int space)
     {
-        number = no * space;
+        number = line.recorder.Count - (no + 1) * space;
+        Debug.Log(number);
     }
 
     public virtual void SetAnimation(Direction direction)
