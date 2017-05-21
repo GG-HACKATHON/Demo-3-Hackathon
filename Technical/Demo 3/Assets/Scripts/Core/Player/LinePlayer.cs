@@ -48,7 +48,8 @@ public class LinePlayer : MonoBehaviour {
         }
         else if (Input.GetKeyDown(KeyCode.A))
         {
-            AddBody(bodies.Count + 1);
+            if (distance * (bodies.Count + 1) < recorder.Count)
+                AddBody(bodies.Count + 1);
         }
     }
 
