@@ -5,9 +5,9 @@ using UnityEngine;
 //cac control se ke thua thang nay
 public class LinePlayer : MonoBehaviour {
 
-    public List<BaseBody> bodys;//cac thang con con ran
-    public BaseBody head;//thang dau tien
-
+    public BaseBody head;
+    public List<BaseBody> bodys;
+    
     public virtual void Init()
     { }
     public virtual void Move()
