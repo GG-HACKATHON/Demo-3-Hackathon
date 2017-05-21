@@ -140,6 +140,11 @@ public class BaseBody : MonoBehaviour {
     public virtual void OnHit(float damge)
     { }
 
+    public virtual void OnHit()
+    {
+
+    }
+
     public virtual void OnHitLine(int index)
     {
         if (leader && linePlayer)
