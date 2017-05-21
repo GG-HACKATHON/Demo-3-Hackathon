@@ -15,6 +15,14 @@ public class Blinker : BaseEffect
     {
         base.Start();
 
+        // nếu như không có object được truyền vào
+        if(target == null)
+        {
+            Debug.LogError("Blinker target NULL Exception!");
+            Destroy(this.gameObject);
+            return;
+        }
+
         timeBlinkNext = timeLife - timeBlink;
         spriteTarget = target.GetComponent<SpriteRenderer>();
     }
