@@ -10,7 +10,8 @@ public enum TYPE_FX
     ExplosionLarge = 3,
     HitGreen = 4,
     HitBlue = 5,
-    Collision = 6
+    Collision = 6,
+    Blink = 7
 }
 
 public class EffectManager : MonoSingleton<EffectManager>
@@ -31,6 +32,13 @@ public class EffectManager : MonoSingleton<EffectManager>
         Instantiate(prefabs[(int)type]);
     }
 
+    public void ApplyEffect(TYPE_FX type, GameObject target)
+    {
+        temp = Instantiate(prefabs[(int)type]) as GameObject;
+
+        temp.GetComponent<BaseEffect>().Init(target);
+    }
+
     public TYPE_FX typeTest;
     public Vector3 locationTest;
     
@@ -45,6 +53,10 @@ public class EffectManager : MonoSingleton<EffectManager>
         if (Input.GetKeyDown(KeyCode.T))
         {
             SpawnTest();
+        }
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            ApplyEffect(TYPE_FX.Blink, GameObject.Find("Panda"));
         }
     }
 #endif

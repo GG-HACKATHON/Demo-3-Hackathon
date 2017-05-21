@@ -6,7 +6,14 @@ public class BaseEffect : MonoBehaviour
 {
     public float timeLife;
 
-    private float timer;
+    protected float timer;
+
+    // dành cho FX áp dụng lên 1 đối tượng nào đó
+    protected GameObject target;
+    public virtual void Init(GameObject _Target)
+    {
+        target = _Target;
+    }
 
     protected virtual void Start()
     {
