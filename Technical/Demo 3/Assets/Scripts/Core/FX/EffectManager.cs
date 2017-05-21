@@ -5,7 +5,12 @@ using UnityEngine;
 public enum TYPE_FX
 {
     None = 0,
-    Vibrating = 1
+    Vibrating = 1,
+    Explosion = 2,
+    ExplosionLarge = 3,
+    HitGreen = 4,
+    HitBlue = 5,
+    Collision = 6
 }
 
 public class EffectManager : MonoSingleton<EffectManager>
