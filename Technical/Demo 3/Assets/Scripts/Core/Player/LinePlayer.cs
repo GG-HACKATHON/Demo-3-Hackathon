@@ -49,7 +49,7 @@ public class LinePlayer : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.A))
         {
             if (distance * (bodies.Count + 1) < recorder.Count)
-                AddBody(bodies.Count + 1);
+                AddBody(ComradeType.HIPPO, bodies.Count + 1);
         }
     }
 
@@ -82,10 +82,10 @@ public class LinePlayer : MonoBehaviour {
     public virtual void CreatePlayer(List<int> bodys)
     { }
 
-    public virtual void AddBody(int number)
+    public virtual void AddBody(ComradeType type, int number)
     {
         Vector3 pos = new Vector3(100, 100);
-        GameObject body = (GameObject)Instantiate(prefab, pos, Quaternion.identity, transform);
+        GameObject body = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(type), pos, Quaternion.identity, transform);
         BaseBody baseBody = body.GetComponent<BaseBody>();
         try {
             baseBody.line = this;

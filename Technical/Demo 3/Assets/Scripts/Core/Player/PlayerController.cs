@@ -5,4 +5,5 @@ using UnityEngine;
 public class PlayerController : MonoSingleton<PlayerController> {
 
     public LinePlayer mainPlayer;
+    
 }
