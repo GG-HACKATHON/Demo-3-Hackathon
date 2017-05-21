@@ -6,6 +6,7 @@ public class EnemyLine : LinePlayer {
 
     public float randomTime;
     private float elapsedTime = 0;
+
     public override void Init()
     {
         GameObject go = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(leaderType), transform);

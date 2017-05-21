@@ -17,10 +17,7 @@ public class BaseBody : MonoBehaviour {
     public float speed;
     public float range;
     public Direction dir;
-
     public GameObject hpBar;
-
-    private int number;
     public LinePlayer line;
     public bool leader;
 
@@ -29,7 +26,13 @@ public class BaseBody : MonoBehaviour {
     private delegate void Action();
     private Action Move;
 
+    [HideInInspector]
     public List<PathRecorder> recorder;
+    [HideInInspector]
+    public int number;
+    [HideInInspector]
+    public LinePlayer linePlayer;
+    private int pos;
 
     private void Start()
     {
@@ -120,13 +123,21 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void Follow()
     {
-        transform.position = this.recorder[number].position;
-        dir = this.recorder[number].direction;
+        transform.position = this.recorder[pos].position;
+        dir = this.recorder[pos].direction;
         number++;
     }
 
     public virtual void OnHit(float damge)
     { }
+
+    public virtual void OnHitLine(int index)
+    {
+        if (linePlayer)
+        {
+            linePlayer.OnHitLine(index);
+        }
+    }
 
     public virtual void OnDie()
     { }
@@ -134,9 +145,10 @@ public class BaseBody : MonoBehaviour {
     public virtual void OnAttack()
     { }
 
-    public virtual void SetNumber(int no, int space)
+    public virtual void SetNumber(int number, int space)
     {
-        number = this.recorder.Count - no * space;
+        this.number = number;
+        this.pos = this.recorder.Count - number * space;
     }
 
     public virtual void SetAnimation(Direction direction)
@@ -173,7 +185,7 @@ public class BaseBody : MonoBehaviour {
         }
     }
 
-    void UpdateHp(float d)
+    public virtual void UpdateHp(float d)
     {
         hpCurrent -= d;
         float scale = hpCurrent / hp;
@@ -185,4 +197,13 @@ public class BaseBody : MonoBehaviour {
         hpBar.transform.localScale = new Vector3(scale, 1, 1);
 
     }
+
+    protected virtual void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "Player")
+        {
+            OnHitLine(col.GetComponent<BaseBody>().number);
+        }
+    }
+
 }

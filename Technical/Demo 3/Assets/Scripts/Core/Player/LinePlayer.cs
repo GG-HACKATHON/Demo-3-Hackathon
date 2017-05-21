@@ -42,6 +42,7 @@ public class LinePlayer : MonoBehaviour {
             head.leader = true;
             head.recorder = new List<PathRecorder>();
             recorder = head.recorder;
+            head.linePlayer = this;
         }
       
         bodies.Add(go);
@@ -129,11 +130,21 @@ public class LinePlayer : MonoBehaviour {
 
     public virtual void RemoveBody(int index)
     {
-        
+        for (int i = index; i < bodies.Count; i++)
+        {
+            Destroy(bodies[i].gameObject);
+        }
+
+        bodies.RemoveRange(index, bodies.Count - index);
     }
 
     public virtual void OnDie()
     { }
+
+    public virtual void OnHitLine(int index)
+    {
+        RemoveBody(index);
+    }
 
     public void Record()
     {
