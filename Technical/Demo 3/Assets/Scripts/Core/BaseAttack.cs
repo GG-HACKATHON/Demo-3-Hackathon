@@ -9,9 +9,10 @@ public class BaseAttack : MonoBehaviour {
 
     private float timeCountDown;
 
-    private float tempTime;  protected BaseBody player;
+    protected BaseBody player;
+
     private bool onAttackEvent;
-    private float tempTime;
+
     public virtual void Init()
     {
         timeCountDown = 0;
