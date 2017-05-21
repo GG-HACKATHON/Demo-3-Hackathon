@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public enum DIRECTION
+public enum Direction
 {
-    TOP = 1,
+    UP = 1,
     DOWN = 2,
     LEFT = 3,
     RIGHT = 4
@@ -12,7 +12,7 @@ public enum DIRECTION
 public class BaseBody : MonoBehaviour {
     public float hp;
     public float range;
-    public DIRECTION dir;
+    public Direction dir;
 	// Use this for initialization
 	void Start () {
 		
