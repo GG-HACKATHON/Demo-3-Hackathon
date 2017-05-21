@@ -73,7 +73,7 @@ public class MapManager : MonoSingleton<MapManager> {
     }
     public Map PlayerPosition()
     {
-        Player player = PlayerController.Instance.mainPlayer;
+        LinePlayer player = PlayerController.Instance.mainPlayer;
         BaseBody head = player.head;
         //kiem tra vi tri cua no tren ban do
         //tra ve ket qua la row, col, positon

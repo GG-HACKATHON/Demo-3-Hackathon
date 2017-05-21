@@ -27,7 +27,7 @@ public class BaseBody : MonoBehaviour {
     { }
     public virtual void Move()
     { }
-    public virtual void Turn(DIRECTION dir)
+    public virtual void Turn(Direction dir)
     {
         this.dir = dir;
     }
