@@ -10,9 +10,16 @@ public enum Direction
     RIGHT = 4
 }
 
+public enum Health
+{
+    PANDA = 50,
+    HIPPO = 70
+}
+
 public class BaseBody : MonoBehaviour {
 
-    public float hp;
+    public float hp;        //Máu hiện tại của player
+    public Health health;   //Tổng máu của player đó
     public float speed;
     public float range;
     public Direction dir;
