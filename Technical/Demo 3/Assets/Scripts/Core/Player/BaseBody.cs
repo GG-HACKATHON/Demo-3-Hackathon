@@ -26,6 +26,7 @@ public class BaseBody : MonoBehaviour {
 
     private int number;
     public LinePlayer line;
+    public bool leader;
 
     protected Animator anim;
 

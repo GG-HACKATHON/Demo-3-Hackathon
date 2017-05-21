@@ -8,6 +8,8 @@ public class BaseAttack : MonoBehaviour {
 
     protected float timeAttackDelay;
 
+    protected BaseBody player;
+
     private float tempTime;
 
     public virtual void Init(float timeAttackDelay)
@@ -19,8 +21,13 @@ public class BaseAttack : MonoBehaviour {
     }
 
 	// Use this for initialization
-	void Start () {
-		
+    protected virtual void Start()
+    {
+        player = transform.parent.gameObject.GetComponent<BaseBody>();
+        if (player == null || !player.leader)
+        {
+            gameObject.SetActive(false);
+        }
 	}
 	
 

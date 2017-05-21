@@ -26,6 +26,11 @@ public class LinePlayer : MonoBehaviour {
 
     public int count;
 
+    private void Start()
+    {
+        
+    }
+
     private void Update()
     {
         Record();

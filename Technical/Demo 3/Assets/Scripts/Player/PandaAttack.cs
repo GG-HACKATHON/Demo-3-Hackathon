@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class PandaAttack : BaseAttack {
 
-    private BaseBody player;
+    
 
     private float offset;
 
     private SpriteRenderer renderer;
 
     // Use this for initialization
-	void Start () {
+	protected virtual void Start () {
+        base.Start();
+
+        player = transform.parent.gameObject.GetComponent<BaseBody>();
+        if (player == null || !player.leader)
+        {
+            gameObject.SetActive(false);
+        }
+
         offset = 0.4f;
         renderer = GetComponent<SpriteRenderer>();
-        player = transform.parent.gameObject.GetComponent<BaseBody>();
         Init(5);
 	}
 	
@@ -37,7 +44,7 @@ public class PandaAttack : BaseAttack {
     void UpdatePosition()
     {
         Debug.Log(player.dir);
-         switch(player.dir)
+        switch(player.dir)
         {
             case Direction.DOWN:
                 renderer.sortingOrder = 1;
