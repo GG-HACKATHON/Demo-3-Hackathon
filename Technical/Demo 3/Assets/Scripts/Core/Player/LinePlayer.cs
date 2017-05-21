@@ -20,13 +20,19 @@ public class LinePlayer : MonoBehaviour {
     [HideInInspector]
     public BaseBody head;
     public ComradeType leaderType;
-    public List<ComradeType> follower;
     [HideInInspector]
     public List<PathRecorder> recorder;
+    public float speed;
+    public float waitTime;
     public int distance;
     public float startDistance;
+    public List<ComradeType> follower;
+    [HideInInspector]
+    public List<GameObject> bodies = new List<GameObject>();
 
-    protected List<GameObject> bodies = new List<GameObject>();
+    public float passedTime = 0f;
+
+    // ------------------------------------------------------------------------------------------
 
     protected virtual void Start()
     {
@@ -42,6 +48,7 @@ public class LinePlayer : MonoBehaviour {
             head.leader = true;
             head.recorder = new List<PathRecorder>();
             recorder = head.recorder;
+            head.speed = speed;
             head.linePlayer = this;
         }
       
@@ -64,48 +71,64 @@ public class LinePlayer : MonoBehaviour {
 
     protected virtual void Update()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        passedTime += Time.deltaTime;
+        if (passedTime >= waitTime)
         {
-            OnTurnDown();
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                OnTurnDown();
+            }
+            else if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                OnTurnUp();
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                OnTurnLeft();
+            }
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                OnTurnRight();
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            OnTurnUp();
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            OnTurnLeft();
-        }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            OnTurnRight();
-        }
-        else if (Input.GetKeyDown(KeyCode.A))
+
+        if (Input.GetKeyDown(KeyCode.A))
         {
             if (distance * (bodies.Count) < recorder.Count)
                 AddBody(ComradeType.HIPPO, bodies.Count);
         }
     }
 
-
     public virtual void OnTurnLeft() 
     {
-        head.Turn(Direction.LEFT);
+        if (head.Turn(Direction.LEFT))
+        {
+            passedTime = 0f;
+        }
     }
 
     public virtual void OnTurnRight()
     {
-        head.Turn(Direction.RIGHT);
+        if (head.Turn(Direction.RIGHT))
+        {
+            passedTime = 0f;
+        }
     }
 
     public virtual void OnTurnUp()
     {
-        head.Turn(Direction.UP);
+        if (head.Turn(Direction.UP))
+        {
+            passedTime = 0f;
+        }
     }
 
     public virtual void OnTurnDown()
     {
-        head.Turn(Direction.DOWN);
+        if (head.Turn(Direction.DOWN))
+        {
+            passedTime = 0f;
+        }
     }
 
     public virtual void CreatePlayer(List<int> bodys)
@@ -119,6 +142,8 @@ public class LinePlayer : MonoBehaviour {
         try {
             baseBody.recorder = bodies[0].GetComponent<BaseBody>().recorder;
             baseBody.SetNumber(number, distance);
+            baseBody.speed = speed;
+            baseBody.linePlayer = this;
             baseBody.Turn(Direction.FOLLOW);
         }
         catch (Exception e)

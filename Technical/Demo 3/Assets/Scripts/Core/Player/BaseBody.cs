@@ -22,6 +22,7 @@ public class BaseBody : MonoBehaviour {
     public bool leader;
 
     protected Animator anim;
+    protected SpriteRenderer render;
 
     private delegate void Action();
     private Action Move;
@@ -48,6 +49,7 @@ public class BaseBody : MonoBehaviour {
         }
 
         Move();
+        SetLayerOrder();
         SetAnimation(this.dir);
     }
 
@@ -62,9 +64,10 @@ public class BaseBody : MonoBehaviour {
             Debug.Break();
         }
 
+        render = GetComponent<SpriteRenderer>();
     }
 
-    public virtual void Turn(Direction direction)
+    public virtual bool Turn(Direction direction)
     {
         switch (direction)
         {
@@ -72,30 +75,35 @@ public class BaseBody : MonoBehaviour {
                 if (dir != Direction.RIGHT)
                 {
                     Move = TurnLeft;
+                    return true;
                 }
                 break;
             case Direction.RIGHT:
                 if (dir != Direction.LEFT)
                 {
                     Move = TurnRight;
+                    return true;
                 }
                 break;
             case Direction.UP:
                 if (dir != Direction.DOWN)
                 {
                     Move = TurnUp;
+                    return true;
                 }
                 break;
             case Direction.DOWN:
                 if (dir != Direction.UP)
                 {
                     Move = TurnDown;
+                    return true;
                 }
                 break;
             case Direction.FOLLOW:
                 Move = Follow;
-                break;
+                return true;
         }
+        return false;
     }
 
     public virtual void TurnLeft()
@@ -126,7 +134,7 @@ public class BaseBody : MonoBehaviour {
     {
         transform.position = this.recorder[pos].position;
         dir = this.recorder[pos].direction;
-        number++;
+        pos++;
     }
 
     public virtual void OnHit(float damge)
@@ -134,7 +142,7 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void OnHitLine(int index)
     {
-        if (linePlayer)
+        if (leader && linePlayer)
         {
             linePlayer.OnHitLine(index);
         }
@@ -184,8 +192,18 @@ public class BaseBody : MonoBehaviour {
                 anim.SetBool("isDown", true);
                 break;
         }
-        if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("HitDown"))
-            anim.SetBool("isHit", false);
+    }
+
+    public virtual void SetLayerOrder()
+    {
+        if (dir == Direction.DOWN)
+        {
+            render.sortingOrder = linePlayer.bodies.Count - number + 10;
+        }
+        else
+        {
+            render.sortingOrder = number + 10;
+        }
         
     }
 
@@ -195,8 +213,8 @@ public class BaseBody : MonoBehaviour {
         float scale = hpCurrent / hp;
         if (hpCurrent <= 0)
         {
-            EffectManager.Instance.Spawn(TYPE_FX.Collision, gameObject.transform.position);
-            Destroy(gameObject);
+
+            //this.OnDead();
         }
         hpBar.transform.localScale = new Vector3(scale, 1, 1);
 

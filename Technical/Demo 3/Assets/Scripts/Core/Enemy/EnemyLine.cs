@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,34 +8,35 @@ public class EnemyLine : LinePlayer {
     public float randomTime;
     private float elapsedTime = 0;
 
-    public override void Init()
+    public virtual void Init()
     {
-        GameObject go = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(leaderType), transform);
-        head = go.GetComponent<BaseBody>();
+        //GameObject go = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(leaderType), transform);
+        //head = go.GetComponent<BaseBody>();
 
-        if (head)
-        {
-            head.leader = true;
-            head.recorder = new List<PathRecorder>();
-            recorder = head.recorder;
-        }
+        //if (head)
+        //{
+        //    head.leader = true;
+        //    head.recorder = new List<PathRecorder>();
+        //    recorder = head.recorder;
+        //}
 
-        bodies.Add(go);
+        //bodies.Add(go);
 
 
-        Vector3 pos = head.transform.position;
-        pos.y += Time.fixedDeltaTime * follower.Count * distance;  
+        //Vector3 pos = head.transform.position;
+        //pos.y += Time.fixedDeltaTime * follower.Count * distance;  
 
-        for (int i = 0; i <= follower.Count * distance; i++)
-        {
-            recorder.Add(new PathRecorder(pos, head.dir));
-            pos.y -= Time.fixedDeltaTime;
-        }
+        //for (int i = 0; i <= follower.Count * distance; i++)
+        //{
+        //    recorder.Add(new PathRecorder(pos, head.dir));
+        //    pos.y -= Time.fixedDeltaTime;
+        //}
 
-        for (int i = 0; i < follower.Count; i++)
-        {
-            AddBody(follower[i], bodies.Count);
-        }
+        //for (int i = 0; i < follower.Count; i++)
+        //{
+        //    AddBody(follower[i], bodies.Count);
+        //}
+        base.Init();
     }
 
     protected virtual void Update()
@@ -46,7 +48,7 @@ public class EnemyLine : LinePlayer {
         elapsedTime += Time.deltaTime;
         if (elapsedTime >= randomTime)
         {
-            int random = Random.Range(0, 4);
+            int random = UnityEngine.Random.Range(0, 4);
             switch (random)
             {
                 case 0: OnTurnLeft(); break;

@@ -1,7 +1,7 @@
 ﻿
 //ke thua tat ca cac ham cua BaseBody
 public class EnemyBody : BaseBody {
-    
+
     public override void Init()
     {
         base.Init();
@@ -11,13 +11,4 @@ public class EnemyBody : BaseBody {
         base.OnAttack();
     }
 
-    public override void UpdateHp(float d)
-    {
-        base.UpdateHp(d);
-    }
-
-    public virtual void OnHit()
-    {
-        anim.SetTrigger("isHit");
-    }
 }
