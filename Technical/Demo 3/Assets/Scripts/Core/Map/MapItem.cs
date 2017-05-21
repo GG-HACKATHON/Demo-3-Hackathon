@@ -33,7 +33,7 @@ public class MapItem : MonoBehaviour {
     }
     public void OnCollision()
     {
-        Debug.LogError("Da va cham voi cac vat can");
+        //Debug.LogError("Da va cham voi cac vat can");
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -44,6 +44,14 @@ public class MapItem : MonoBehaviour {
             if (other.tag == "Player")
             {
                 this.OnCollision();
+            }
+            if(other.tag == "Enemy")
+            {
+                EnemyLine enemy = other.transform.parent.gameObject.GetComponent<EnemyLine>();
+                if(enemy != null)
+                {
+                    enemy.TurnRandom();
+                }
             }
         }
     }

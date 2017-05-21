@@ -114,7 +114,7 @@ public class MapManager : MonoSingleton<MapManager> {
             }
         }
         yield return new WaitForEndOfFrame();
-        CreateBlook();
+        //CreateBlook();
         yield return new WaitForEndOfFrame();
         CreateBorder();
     }
