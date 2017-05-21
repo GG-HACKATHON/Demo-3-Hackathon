@@ -10,7 +10,6 @@ public class BaseAttack : MonoBehaviour {
 
     private float tempTime;
 
-
     public virtual void Init(float timeAttackDelay)
     {
         tempTime = 0;
