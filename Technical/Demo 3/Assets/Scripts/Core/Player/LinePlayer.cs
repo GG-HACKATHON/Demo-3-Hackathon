@@ -17,24 +17,52 @@ public class PathRecorder
 
 public class LinePlayer : MonoBehaviour {
 
+    [HideInInspector]
     public BaseBody head;
-    public GameObject prefab;
-
-    List<GameObject> bodies = new List<GameObject>();
-    public List<PathRecorder> recorder = new List<PathRecorder>();
+    public ComradeType leaderType;
+    public List<ComradeType> follower;
+    [HideInInspector]
+    public List<PathRecorder> recorder;
     public int distance;
+    public float startDistance;
 
-    public int count;
+    protected List<GameObject> bodies = new List<GameObject>();
 
-    private void Start()
+    protected virtual void Start()
     {
-        
+        Init();
     }
 
-    private void Update()
+    public virtual void Init()
     {
-        Record();
-        count = recorder.Count;
+        GameObject go = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(leaderType), transform);
+        head = go.GetComponent<BaseBody>();
+
+        if (head) {
+            head.leader = true;
+            head.recorder = new List<PathRecorder>();
+            recorder = head.recorder;
+        }
+      
+        bodies.Add(go);
+
+        Vector3 pos = head.transform.position;
+        pos.y += startDistance * follower.Count * distance;
+
+        for (int i = 0; i <= follower.Count * distance; i++)
+        {
+            recorder.Add(new PathRecorder(pos, head.dir));
+            pos.y -= startDistance;
+        }
+
+        for (int i = 0; i < follower.Count; i++)
+        {
+            AddBody(follower[i], bodies.Count);
+        }
+    }
+
+    protected virtual void Update()
+    {
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             OnTurnDown();
@@ -53,16 +81,11 @@ public class LinePlayer : MonoBehaviour {
         }
         else if (Input.GetKeyDown(KeyCode.A))
         {
-            if (distance * (bodies.Count + 1) < recorder.Count)
-                AddBody(ComradeType.HIPPO, bodies.Count + 1);
+            if (distance * (bodies.Count) < recorder.Count)
+                AddBody(ComradeType.HIPPO, bodies.Count);
         }
     }
 
-    public virtual void Init()
-    { }
-
-    public virtual void Move()
-    { }
 
     public virtual void OnTurnLeft() 
     {
@@ -93,7 +116,7 @@ public class LinePlayer : MonoBehaviour {
         GameObject body = (GameObject)Instantiate(ComradeManager.Instance.GetObjectByType(type), pos, Quaternion.identity, transform);
         BaseBody baseBody = body.GetComponent<BaseBody>();
         try {
-            baseBody.line = this;
+            baseBody.recorder = bodies[0].GetComponent<BaseBody>().recorder;
             baseBody.SetNumber(number, distance);
             baseBody.Turn(Direction.FOLLOW);
         }
@@ -114,6 +137,9 @@ public class LinePlayer : MonoBehaviour {
 
     public void Record()
     {
-        recorder.Add(new PathRecorder(head.transform.position, head.dir));
+        if (head != null)
+        {
+            recorder.Add(new PathRecorder(head.transform.position, head.dir));
+        }
     }
 }

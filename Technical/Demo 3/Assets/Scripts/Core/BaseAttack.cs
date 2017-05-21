@@ -22,11 +22,7 @@ public class BaseAttack : MonoBehaviour {
 	// Use this for initialization
     protected virtual void Start()
     {
-        player = transform.parent.gameObject.GetComponent<BaseBody>();
-        if (player == null || !player.leader)
-        {
-            gameObject.SetActive(false);
-        }
+        
 	}
 
     public virtual void CountDownTime()

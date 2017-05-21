@@ -29,6 +29,8 @@ public class BaseBody : MonoBehaviour {
     private delegate void Action();
     private Action Move;
 
+    public List<PathRecorder> recorder;
+
     private void Start()
     {
         hpCurrent = hp;
@@ -37,6 +39,11 @@ public class BaseBody : MonoBehaviour {
 
     private void Update()
     {
+        if (leader)
+        {
+            recorder.Add(new PathRecorder(transform.position, dir));
+        }
+
         Move();
         SetAnimation(this.dir);
     }
@@ -113,8 +120,8 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void Follow()
     {
-        transform.position = line.recorder[number].position;
-        dir = line.recorder[number].direction;
+        transform.position = this.recorder[number].position;
+        dir = this.recorder[number].direction;
         number++;
     }
 
@@ -129,7 +136,7 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void SetNumber(int no, int space)
     {
-        number = line.recorder.Count - no * space;
+        number = this.recorder.Count - no * space;
     }
 
     public virtual void SetAnimation(Direction direction)
