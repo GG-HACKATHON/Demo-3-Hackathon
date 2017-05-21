@@ -1,0 +1,1428 @@
+fileFormatVersion: 2
+guid: dba19122231f3154aa598658a90aba3b
+timeCreated: 1495337979
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player_panda_0
+    21300002: player_panda_1
+    21300004: player_panda_2
+    21300006: player_panda_3
+    21300008: player_panda_4
+    21300010: player_panda_5
+    21300012: player_panda_6
+    21300014: player_panda_7
+    21300016: player_panda_8
+    21300018: player_panda_9
+    21300020: player_panda_10
+    21300022: player_panda_11
+    21300024: player_panda_12
+    21300026: player_panda_13
+    21300028: player_panda_14
+    21300030: player_panda_15
+    21300032: player_panda_16
+    21300034: player_panda_17
+    21300036: player_panda_18
+    21300038: player_panda_19
+    21300040: player_panda_20
+    21300042: player_panda_21
+    21300044: player_panda_22
+    21300046: player_panda_23
+    21300048: player_panda_24
+    21300050: player_panda_25
+    21300052: player_panda_26
+    21300054: player_panda_27
+    21300056: player_panda_28
+    21300058: player_panda_29
+    21300060: player_panda_30
+    21300062: player_panda_31
+    21300064: player_panda_32
+    21300066: player_panda_33
+    21300068: player_panda_34
+    21300070: player_panda_35
+    21300072: player_panda_36
+    21300074: player_panda_37
+    21300076: player_panda_38
+    21300078: player_panda_39
+    21300080: player_panda_40
+    21300082: player_panda_41
+    21300084: player_panda_42
+    21300086: player_panda_43
+    21300088: player_panda_44
+    21300090: player_panda_45
+    21300092: player_panda_46
+    21300094: player_panda_47
+    21300096: player_panda_48
+    21300098: player_panda_49
+    21300100: player_panda_50
+    21300102: player_panda_51
+    21300104: player_panda_52
+    21300106: player_panda_53
+    21300108: player_panda_54
+    21300110: player_panda_55
+    21300112: player_panda_56
+    21300114: player_panda_57
+    21300116: player_panda_58
+    21300118: player_panda_59
+    21300120: player_panda_60
+    21300122: player_panda_61
+    21300124: player_panda_62
+    21300126: player_panda_63
+    21300128: player_panda_64
+    21300130: player_panda_65
+    21300132: player_panda_66
+    21300134: player_panda_67
+    21300136: player_panda_68
+    21300138: player_panda_69
+    21300140: player_panda_70
+    21300142: player_panda_71
+    21300144: player_panda_72
+    21300146: player_panda_73
+    21300148: player_panda_74
+    21300150: player_panda_75
+    21300152: player_panda_76
+    21300154: player_panda_77
+    21300156: player_panda_78
+    21300158: player_panda_79
+    21300160: player_panda_80
+    21300162: player_panda_81
+    21300164: player_panda_82
+    21300166: player_panda_83
+    21300168: player_panda_84
+    21300170: player_panda_85
+    21300172: player_panda_86
+    21300174: player_panda_87
+    21300176: player_panda_88
+    21300178: player_panda_89
+    21300180: player_panda_90
+    21300182: player_panda_91
+    21300184: player_panda_92
+    21300186: player_panda_93
+    21300188: player_panda_94
+    21300190: player_panda_95
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_panda_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 907
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 907
+        width: 55
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 907
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 907
+        width: 55
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 907
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 907
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 907
+        width: 53
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_7
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 907
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_8
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 907
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_9
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 907
+        width: 55
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_10
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 907
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_11
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 907
+        width: 55
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 824
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_13
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 824
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_14
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 824
+        width: 53
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_15
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 824
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 824
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_17
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 823
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_18
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 824
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_19
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 823
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_20
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 824
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_21
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 823
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_22
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 823
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_23
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 823
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 724
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_25
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 723
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_26
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 723
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_27
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 723
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_28
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 724
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_29
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 723
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_30
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 722
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_31
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 723
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_32
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 724
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_33
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 724
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_34
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 724
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_35
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 724
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_36
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 724
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_37
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 724
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_38
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 724
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_39
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 724
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_40
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 614
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_41
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 613
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_42
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 613
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_43
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 613
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_44
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 614
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_45
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 613
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_46
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 612
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_47
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 613
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_48
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 614
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_49
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 613
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_50
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 611
+        width: 58
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_51
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 613
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_52
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 515
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_53
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 514
+        width: 52
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_54
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 513
+        width: 56
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_55
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 514
+        width: 52
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_56
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 515
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_57
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 515
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_58
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 515
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_59
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 515
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_60
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 515
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_61
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 514
+        width: 52
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_62
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 513
+        width: 56
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_63
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 514
+        width: 52
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_64
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 413
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_65
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 413
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_66
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 413
+        width: 56
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_67
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 413
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_68
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 413
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_69
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 411
+        width: 62
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_70
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 411
+        width: 62
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_71
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 413
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_72
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 411
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_73
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 411
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_74
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 413
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_75
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 411
+        width: 62
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_76
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 411
+        width: 62
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_77
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 313
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_78
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 311
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_79
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 311
+        width: 58
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_80
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 313
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_81
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 313
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_82
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 313
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_83
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 313
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_84
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 313
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_85
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 313
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_86
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 313
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_87
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 313
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_88
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 313
+        width: 40
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_89
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 313
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_90
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 313
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_91
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 313
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_92
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 313
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_93
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 205
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_94
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 205
+        width: 40
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_panda_95
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 205
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

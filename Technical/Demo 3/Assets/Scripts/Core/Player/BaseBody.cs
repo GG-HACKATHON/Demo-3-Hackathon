@@ -16,33 +16,51 @@ public class BaseBody : MonoBehaviour {
     public float range;
     public Direction dir;
 
+    private Animator anim;
+
     public virtual void Init()
     {
- 
+        anim = GetComponent<Animator>();
     }
 
     public virtual void TurnLeft()
     {
         this.dir = Direction.LEFT;
         transform.position += Vector3.left * speed * Time.deltaTime;
+        anim.SetBool("isLeft", true);
+        anim.SetBool("isRight", false);
+        anim.SetBool("isUp", false);
+        anim.SetBool("isDown", false);
     }
 
     public virtual void TurnRight()
     {
         this.dir = Direction.RIGHT;
         transform.position += Vector3.right * speed * Time.deltaTime;
+        anim.SetBool("isLeft", false);
+        anim.SetBool("isRight", true);
+        anim.SetBool("isUp", false);
+        anim.SetBool("isDown", false);
     }
 
     public virtual void TurnUp()
     {
         this.dir = Direction.UP;
         transform.position += Vector3.up * speed * Time.deltaTime;
+        anim.SetBool("isLeft", false);
+        anim.SetBool("isRight", false);
+        anim.SetBool("isUp", true);
+        anim.SetBool("isDown", false);
     }
 
     public virtual void TurnDown()
     {
         this.dir = Direction.DOWN;
-        transform.position += Vector3.down * speed * Time.deltaTime; 
+        transform.position += Vector3.down * speed * Time.deltaTime;
+        anim.SetBool("isLeft", false);
+        anim.SetBool("isRight", false);
+        anim.SetBool("isUp", false);
+        anim.SetBool("isDown", true);
     }
 
     public virtual void OnHit(float damge)
