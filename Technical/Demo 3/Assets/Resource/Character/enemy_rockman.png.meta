@@ -1,0 +1,1316 @@
+fileFormatVersion: 2
+guid: 0a835ba5675af0540b87729bdedbe9a3
+timeCreated: 1495350282
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: enemy_rockman_0
+    21300002: enemy_rockman_1
+    21300004: enemy_rockman_2
+    21300006: enemy_rockman_3
+    21300008: enemy_rockman_4
+    21300010: enemy_rockman_5
+    21300012: enemy_rockman_6
+    21300014: enemy_rockman_7
+    21300016: enemy_rockman_8
+    21300018: enemy_rockman_9
+    21300020: enemy_rockman_10
+    21300022: enemy_rockman_11
+    21300024: enemy_rockman_12
+    21300026: enemy_rockman_13
+    21300028: enemy_rockman_14
+    21300030: enemy_rockman_15
+    21300032: enemy_rockman_16
+    21300034: enemy_rockman_17
+    21300036: enemy_rockman_18
+    21300038: enemy_rockman_19
+    21300040: enemy_rockman_20
+    21300042: enemy_rockman_21
+    21300044: enemy_rockman_22
+    21300046: enemy_rockman_23
+    21300048: enemy_rockman_24
+    21300050: enemy_rockman_25
+    21300052: enemy_rockman_26
+    21300054: enemy_rockman_27
+    21300056: enemy_rockman_28
+    21300058: enemy_rockman_29
+    21300060: enemy_rockman_30
+    21300062: enemy_rockman_31
+    21300064: enemy_rockman_32
+    21300066: enemy_rockman_33
+    21300068: enemy_rockman_34
+    21300070: enemy_rockman_35
+    21300072: enemy_rockman_36
+    21300074: enemy_rockman_37
+    21300076: enemy_rockman_38
+    21300078: enemy_rockman_39
+    21300080: enemy_rockman_40
+    21300082: enemy_rockman_41
+    21300084: enemy_rockman_42
+    21300086: enemy_rockman_43
+    21300088: enemy_rockman_44
+    21300090: enemy_rockman_45
+    21300092: enemy_rockman_46
+    21300094: enemy_rockman_47
+    21300096: enemy_rockman_48
+    21300098: enemy_rockman_49
+    21300100: enemy_rockman_50
+    21300102: enemy_rockman_51
+    21300104: enemy_rockman_52
+    21300106: enemy_rockman_53
+    21300108: enemy_rockman_54
+    21300110: enemy_rockman_55
+    21300112: enemy_rockman_56
+    21300114: enemy_rockman_57
+    21300116: enemy_rockman_58
+    21300118: enemy_rockman_59
+    21300120: enemy_rockman_60
+    21300122: enemy_rockman_61
+    21300124: enemy_rockman_62
+    21300126: enemy_rockman_63
+    21300128: enemy_rockman_64
+    21300130: enemy_rockman_65
+    21300132: enemy_rockman_66
+    21300134: enemy_rockman_67
+    21300136: enemy_rockman_68
+    21300138: enemy_rockman_69
+    21300140: enemy_rockman_70
+    21300142: enemy_rockman_71
+    21300144: enemy_rockman_72
+    21300146: enemy_rockman_73
+    21300148: enemy_rockman_74
+    21300150: enemy_rockman_75
+    21300152: enemy_rockman_76
+    21300154: enemy_rockman_77
+    21300156: enemy_rockman_78
+    21300158: enemy_rockman_79
+    21300160: enemy_rockman_80
+    21300162: enemy_rockman_81
+    21300164: enemy_rockman_82
+    21300166: enemy_rockman_83
+    21300168: enemy_rockman_84
+    21300170: enemy_rockman_85
+    21300172: enemy_rockman_86
+    21300174: enemy_rockman_87
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy_rockman_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 588
+        width: 84
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 588
+        width: 84
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_2
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 588
+        width: 84
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_3
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 588
+        width: 84
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_4
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 588
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_5
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 588
+        width: 81
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_6
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 588
+        width: 81
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_7
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 588
+        width: 81
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_8
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 588
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_9
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 588
+        width: 93
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_10
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 588
+        width: 95
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_11
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 588
+        width: 94
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_12
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 589
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_13
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 589
+        width: 81
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_14
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 589
+        width: 81
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_15
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 589
+        width: 81
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_16
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 476
+        width: 84
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_17
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 476
+        width: 84
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_18
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 476
+        width: 84
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_19
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 476
+        width: 83
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_20
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 476
+        width: 84
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_21
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 476
+        width: 84
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_22
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 476
+        width: 84
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_23
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 476
+        width: 84
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_24
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 476
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_25
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 476
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_26
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 476
+        width: 81
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_27
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 476
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_28
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 476
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_29
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 476
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_30
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 476
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_31
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 476
+        width: 81
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_32
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 364
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_33
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 364
+        width: 94
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_34
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 364
+        width: 94
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_35
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 364
+        width: 94
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_36
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 364
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_37
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 364
+        width: 94
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_38
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 364
+        width: 102
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_39
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 364
+        width: 94
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_40
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 364
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_41
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 364
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_42
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 364
+        width: 81
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_43
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 364
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_44
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 364
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_45
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 364
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_46
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 364
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_47
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 364
+        width: 81
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_48
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 252
+        width: 109
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_49
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 252
+        width: 112
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_50
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 252
+        width: 105
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_51
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 252
+        width: 84
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_52
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 252
+        width: 84
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_53
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 252
+        width: 87
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_54
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 252
+        width: 90
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_55
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 252
+        width: 90
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_56
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 252
+        width: 90
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_57
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 252
+        width: 90
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_58
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 252
+        width: 87
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_59
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 252
+        width: 93
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_60
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 252
+        width: 93
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_61
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 252
+        width: 87
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_62
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 252
+        width: 87
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_63
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 140
+        width: 87
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_64
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 140
+        width: 90
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_65
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 140
+        width: 90
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_66
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 140
+        width: 90
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_67
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 140
+        width: 90
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_68
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 140
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_69
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 140
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_70
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 140
+        width: 98
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_71
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 140
+        width: 99
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_72
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 140
+        width: 98
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_73
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 140
+        width: 99
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_74
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 140
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_75
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 140
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_76
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 140
+        width: 84
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_77
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 140
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_78
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 140
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_79
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 28
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_80
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 28
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_81
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 28
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_82
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 28
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_83
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 28
+        width: 75
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_84
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 28
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_85
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 28
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_86
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 28
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_rockman_87
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 28
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
