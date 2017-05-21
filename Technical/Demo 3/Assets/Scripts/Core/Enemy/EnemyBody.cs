@@ -16,4 +16,6 @@ public class EnemyBody : BaseBody {
     //goi den ham finish cua game
     public virtual void OnCollision()
     { }
+
+
 }
