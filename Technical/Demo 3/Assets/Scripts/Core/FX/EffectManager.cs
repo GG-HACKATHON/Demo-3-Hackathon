@@ -10,11 +10,12 @@ public enum TYPE_FX
     ExplosionLarge = 3,
     HitGreen = 4,
     HitBlue = 5,
-    Collision = 6,
+    Smoke = 6,
     Blink = 7,
     FadeIn = 8,
     ComboExplosionSmall = 9,
-    ComboExplosionLarge = 10
+    ComboExplosionLarge = 10,
+    FadeOut = 11
 }
 
 public class EffectManager : MonoSingleton<EffectManager>
@@ -23,6 +24,7 @@ public class EffectManager : MonoSingleton<EffectManager>
 
     private GameObject temp;
 
+    // Spawn ra tại location đó
     public void Spawn(TYPE_FX type, Vector3 location)
     {
         temp = Instantiate(prefabs[(int)type]) as GameObject;
@@ -35,14 +37,25 @@ public class EffectManager : MonoSingleton<EffectManager>
         Instantiate(prefabs[(int)type]);
     }
 
-    
+    // tạo FX chớp chớp, mờ,... lên 1 đối tượng nào đó
     public void ApplyEffect(TYPE_FX type, GameObject target)
     {
         temp = Instantiate(prefabs[(int)type]) as GameObject;
 
+        // !!! lưu ý không gọi cartoon FX
         temp.GetComponent<BaseEffect>().Init(target);
     }
 
+    public void ApplyEffect(TYPE_FX type, GameObject target, float _TimeLife)
+    {
+        temp = Instantiate(prefabs[(int)type]) as GameObject;
+
+        // !!! lưu ý không gọi cartoon FX
+        temp.GetComponent<BaseEffect>().Init(target);
+        temp.GetComponent<BaseEffect>().timeLife = _TimeLife;
+    }
+
+#if UNITY_EDITOR//--------------------------------------------
     public TYPE_FX typeTest;
     public Vector3 locationTest;
     
@@ -51,7 +64,6 @@ public class EffectManager : MonoSingleton<EffectManager>
         Spawn(typeTest, locationTest);
     }
 
-#if UNITY_EDITOR
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.T))
@@ -67,5 +79,5 @@ public class EffectManager : MonoSingleton<EffectManager>
             ApplyEffect(TYPE_FX.FadeIn, GameObject.FindGameObjectWithTag("Player"));
         }
     }
-#endif
+#endif// --------------------------------------------
 }

@@ -36,12 +36,20 @@ public class Blinker : BaseEffect
 
     protected override void Update()
     {
-        if(timer <= timeBlinkNext)
+        if (target != null)
         {
-            spriteTarget.enabled = !spriteTarget.enabled;
-            timeBlinkNext -= timeBlink;
+            if (timer <= timeBlinkNext)
+            {
+                spriteTarget.enabled = !spriteTarget.enabled;
+                timeBlinkNext -= timeBlink;
+            }
         }
-
+        else
+        {
+            Debug.LogError("Blinker Target missing!");
+            Destroy(this.gameObject);
+            return;
+        }
 
         base.Update();
     }
