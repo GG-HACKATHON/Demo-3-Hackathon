@@ -12,7 +12,7 @@ public enum TYPE_FX
     HitBlue = 5,
     Collision = 6,
     Blink = 7,
-
+    FadeIn = 8,
     ComboExplosionSmall = 9,
     ComboExplosionLarge = 10
 }
@@ -60,6 +60,10 @@ public class EffectManager : MonoSingleton<EffectManager>
         if (Input.GetKeyDown(KeyCode.Y))
         {
             ApplyEffect(TYPE_FX.Blink, GameObject.Find("Panda"));
+        }
+        else if (Input.GetKeyDown(KeyCode.F))
+        {
+            ApplyEffect(TYPE_FX.FadeIn, GameObject.Find("Panda"));
         }
     }
 #endif
