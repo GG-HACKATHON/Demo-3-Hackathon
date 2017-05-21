@@ -61,6 +61,7 @@ public class BaseBody : MonoBehaviour {
         {
             Debug.Break();
         }
+
     }
 
     public virtual void Turn(Direction direction)
@@ -183,6 +184,9 @@ public class BaseBody : MonoBehaviour {
                 anim.SetBool("isDown", true);
                 break;
         }
+        if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("HitDown"))
+            anim.SetBool("isHit", false);
+        
     }
 
     public virtual void UpdateHp(float d)
@@ -191,8 +195,8 @@ public class BaseBody : MonoBehaviour {
         float scale = hpCurrent / hp;
         if (hpCurrent <= 0)
         {
-
-            //this.OnDead();
+            EffectManager.Instance.Spawn(TYPE_FX.Collision, gameObject.transform.position);
+            Destroy(gameObject);
         }
         hpBar.transform.localScale = new Vector3(scale, 1, 1);
 

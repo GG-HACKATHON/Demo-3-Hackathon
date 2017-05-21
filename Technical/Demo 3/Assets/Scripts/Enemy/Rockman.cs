@@ -12,4 +12,15 @@ public class Rockman : EnemyBody {
     {
         base.OnAttack();
     }
+
+    public override void UpdateHp(float d)
+    {
+        base.UpdateHp(d);
+    }
+
+    [ContextMenu("on Hit")]
+    public override void OnHit()
+    {
+        base.OnHit();
+    }
 }

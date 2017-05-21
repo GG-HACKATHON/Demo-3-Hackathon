@@ -10,4 +10,14 @@ public class EnemyBody : BaseBody {
     {
         base.OnAttack();
     }
+
+    public override void UpdateHp(float d)
+    {
+        base.UpdateHp(d);
+    }
+
+    public virtual void OnHit()
+    {
+        anim.SetTrigger("isHit");
+    }
 }

@@ -30,6 +30,7 @@ public class BasePlayerWeapon : MonoBehaviour {
         if(target.tag == "Enemy")
         {
             Destroy(gameObject);
+            target.gameObject.GetComponent<BaseBody>().UpdateHp(60);
         }
     }
 
