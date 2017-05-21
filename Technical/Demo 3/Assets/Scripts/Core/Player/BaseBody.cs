@@ -10,19 +10,15 @@ public enum Direction
     RIGHT = 4
 }
 
-public enum Health
-{
-    PANDA = 50,
-    HIPPO = 70
-}
-
 public class BaseBody : MonoBehaviour {
 
     public float hp;        //Máu hiện tại của player
-    public Health health;   //Tổng máu của player đó
+    public float hpCurrent;
     public float speed;
     public float range;
     public Direction dir;
+
+    public GameObject hpBar;
 
     private int number;
     public LinePlayer line;
@@ -35,6 +31,7 @@ public class BaseBody : MonoBehaviour {
 
     private void Start()
     {
+        hpCurrent = hp;
         Init();
     }
 
@@ -167,5 +164,18 @@ public class BaseBody : MonoBehaviour {
                 anim.SetBool("isDown", true);
                 break;
         }
+    }
+
+    void UpdateHp(float d)
+    {
+        hpCurrent -= d;
+        float scale = hpCurrent / hp;
+        if (hpCurrent <= 0)
+        {
+
+            //this.OnDead();
+        }
+        hpBar.transform.localScale = new Vector3(scale, 1, 1);
+
     }
 }

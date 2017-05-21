@@ -18,10 +18,18 @@ public class HealthBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        ratio = (float) player.hp / (float) player.health;
-        Vector3 scaleRatio = new Vector3(ratio, 1.0f, 1.0f);
-        hp.transform.localScale = scaleRatio;
-
-        Debug.Log(player.hp + "   " +(float) player.health);
 	}
+
+    void UpdateHp(float d)
+    {
+        player.hpCurrent -= d;
+        float scale = player.hpCurrent / player.hp;
+        if (player.hpCurrent <= 0)
+        {
+
+            //this.OnDead();
+        }
+        this.hp.transform.localScale = new Vector3(scale, 1, 1);
+
+    }
 }
