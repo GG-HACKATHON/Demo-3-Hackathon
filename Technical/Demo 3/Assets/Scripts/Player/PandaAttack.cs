@@ -22,25 +22,25 @@ public class PandaAttack : BaseAttack {
 
         offset = 0.4f;
         renderer = GetComponent<SpriteRenderer>();
-        Init(5);
+        Init();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        DoAttack();
+        CountDownTime();
         UpdatePosition();
 	}
 
-    public override void Init(float timeAttackDelay)
+    public override void CountDownTime()
     {
-        base.Init(timeAttackDelay);
+        base.CountDownTime();
     }
 
-    public override void DoAttack()
+    public override void Init()
     {
-        base.DoAttack();
+        base.Init();
     }
-
+    
     void UpdatePosition()
     {
         Debug.Log(player.dir);
@@ -64,4 +64,5 @@ public class PandaAttack : BaseAttack {
                 break;
         }
     }
+
 }

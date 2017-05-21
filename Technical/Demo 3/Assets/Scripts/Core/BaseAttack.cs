@@ -1,23 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Director;
 
 public class BaseAttack : MonoBehaviour {
 
     protected Animator anim;
 
-    protected float timeAttackDelay;
+    private float timeCountDown;
 
-    protected BaseBody player;
-
+    private float tempTime;  protected BaseBody player;
+    private bool onAttackEvent;
     private float tempTime;
-
-    public virtual void Init(float timeAttackDelay)
+    public virtual void Init()
     {
-        tempTime = 0;
-        this.timeAttackDelay = timeAttackDelay;
+        timeCountDown = 0;
         anim = GetComponent<Animator>();
-        
     }
 
 	// Use this for initialization
@@ -29,22 +27,35 @@ public class BaseAttack : MonoBehaviour {
             gameObject.SetActive(false);
         }
 	}
-	
+
+    public virtual void CountDownTime()
+    {
+        Debug.Log(timeCountDown);
+        if (timeCountDown > 0)
+            timeCountDown -= Time.deltaTime;
+    }
 
     void OnTriggerEnter2D(Collider2D target)
     {
-        Debug.Log("hitttttttttt");
+        if (target.tag == "Enemy")
+        {
+            Debug.Log("enemyyyyyyyyyyyy");
+            if (timeCountDown <= 0)
+            {
+                anim.Play(0);
+                timeCountDown = 3.0f;
+            }
+        }
     }
 
-    public virtual void DoAttack()
+    void OnTriggerStay2D(Collider2D target)
     {
-        if (tempTime <= 0)
-        {
-            anim.Play(0);
-            tempTime = timeAttackDelay;
-        }
-        else
-            tempTime -= Time.deltaTime;
+        if (onAttackEvent && target.tag == "Enemy")
+            Debug.Log("Danh trung");
+    }
 
+    public void UpdateAttackEvent(int e)
+    {
+        onAttackEvent = (e == 1) ? true : false;
     }
 }
