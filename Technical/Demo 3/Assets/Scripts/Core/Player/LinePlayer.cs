@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,11 +22,14 @@ public class LinePlayer : MonoBehaviour {
 
     List<GameObject> bodies = new List<GameObject>();
     public List<PathRecorder> recorder = new List<PathRecorder>();
+    public int distance;
+
+    public int count;
 
     private void Update()
     {
         Record();
-
+        count = recorder.Count;
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             OnTurnDown();
@@ -44,7 +48,7 @@ public class LinePlayer : MonoBehaviour {
         }
         else if (Input.GetKeyDown(KeyCode.A))
         {
-            AddBody(bodies.Count);
+            AddBody(bodies.Count + 1);
         }
     }
 
@@ -79,11 +83,19 @@ public class LinePlayer : MonoBehaviour {
 
     public virtual void AddBody(int number)
     {
-        GameObject body = (GameObject)Instantiate(prefab, transform);
+        Vector3 pos = new Vector3(100, 100);
+        GameObject body = (GameObject)Instantiate(prefab, pos, Quaternion.identity, transform);
         BaseBody baseBody = body.GetComponent<BaseBody>();
-        baseBody.line = this;
-        baseBody.SetNumber(number, 1);
-        baseBody.Turn(Direction.FOLLOW);
+        try {
+            baseBody.line = this;
+            baseBody.SetNumber(number, distance);
+            baseBody.Turn(Direction.FOLLOW);
+        }
+        catch (Exception e)
+        {
+            Debug.Log("Error Create");
+        }
+        bodies.Add(body);
     }
 
     public virtual void RemoveBody(BaseBody body)

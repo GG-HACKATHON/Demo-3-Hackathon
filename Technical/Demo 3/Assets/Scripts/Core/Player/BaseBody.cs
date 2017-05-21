@@ -38,7 +38,9 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void Init()
     {
-        Move = TurnDown;
+        if (Move != Follow) 
+            Move = TurnDown;
+
         anim = GetComponent<Animator>();
         if (anim == null)
         {
@@ -110,8 +112,7 @@ public class BaseBody : MonoBehaviour {
 
     public virtual void SetNumber(int no, int space)
     {
-        number = line.recorder.Count - (no + 1) * space;
-        Debug.Log(number);
+        number = line.recorder.Count - no * space;
     }
 
     public virtual void SetAnimation(Direction direction)
