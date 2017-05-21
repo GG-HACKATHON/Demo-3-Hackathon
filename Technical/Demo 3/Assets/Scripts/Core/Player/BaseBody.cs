@@ -53,16 +53,28 @@ public class BaseBody : MonoBehaviour {
         switch (direction)
         {
             case Direction.LEFT:
-                Move = TurnLeft;
+                if (dir != Direction.RIGHT)
+                {
+                    Move = TurnLeft;
+                }
                 break;
             case Direction.RIGHT:
-                Move = TurnRight;
+                if (dir != Direction.LEFT)
+                {
+                    Move = TurnRight;
+                }
                 break;
             case Direction.UP:
-                Move = TurnUp;
+                if (dir != Direction.DOWN)
+                {
+                    Move = TurnUp;
+                }
                 break;
             case Direction.DOWN:
-                Move = TurnDown;
+                if (dir != Direction.UP)
+                {
+                    Move = TurnDown;
+                }
                 break;
             case Direction.FOLLOW:
                 Move = Follow;
