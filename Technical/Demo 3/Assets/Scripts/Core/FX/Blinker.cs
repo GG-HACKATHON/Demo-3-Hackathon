@@ -23,8 +23,15 @@ public class Blinker : BaseEffect
             return;
         }
 
-        timeBlinkNext = timeLife - timeBlink;
         spriteTarget = target.GetComponent<SpriteRenderer>();
+        if(spriteTarget == null)
+        {
+            Debug.LogError("Blinker sprite NULL Exception!");
+            Destroy(this.gameObject);
+            return;
+        }
+
+        timeBlinkNext = timeLife - timeBlink;
     }
 
     protected override void Update()

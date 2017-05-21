@@ -11,7 +11,10 @@ public enum TYPE_FX
     HitGreen = 4,
     HitBlue = 5,
     Collision = 6,
-    Blink = 7
+    Blink = 7,
+
+    ComboExplosionSmall = 9,
+    ComboExplosionLarge = 10
 }
 
 public class EffectManager : MonoSingleton<EffectManager>
