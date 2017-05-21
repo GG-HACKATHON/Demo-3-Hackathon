@@ -19,17 +19,34 @@ public class LinePlayer : MonoBehaviour {
     public BaseBody head;
     public GameObject prefab;
 
-    List<GameObject> bodies;
+    List<GameObject> bodies = new List<GameObject>();
     List<PathRecorder> recorder = new List<PathRecorder>();
 
     private void Update()
     {
         Record();
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            OnTurnDown();
+        }
+        else if (Input.GetKey(KeyCode.UpArrow))
+        {
+            OnTurnUp();
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            OnTurnLeft();
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            OnTurnRight();
+        }
+        else if (Input.GetKey(KeyCode.A))
         {
             AddBody(bodies.Count);
         }
+
     }
 
     public virtual void Init()
@@ -40,22 +57,22 @@ public class LinePlayer : MonoBehaviour {
 
     public virtual void OnTurnLeft() 
     {
-        head.TurnLeft();
+        head.Turn(Direction.LEFT);
     }
 
     public virtual void OnTurnRight()
     {
-        head.TurnRight();
+        head.Turn(Direction.RIGHT);
     }
 
     public virtual void OnTurnUp()
     {
-        head.TurnUp();
+        head.Turn(Direction.UP);
     }
 
     public virtual void OnTurnDown()
     {
-        head.TurnDown();
+        head.Turn(Direction.DOWN);
     }
 
     public virtual void CreatePlayer(List<int> bodys)
@@ -64,7 +81,10 @@ public class LinePlayer : MonoBehaviour {
     public virtual void AddBody(int number)
     {
         GameObject body = (GameObject)Instantiate(prefab, transform);
-        body.GetComponent<BaseBody>().SetNumber(number, 50);
+        BaseBody baseBody = body.GetComponent<BaseBody>();
+        baseBody.recorder = this.recorder;
+        baseBody.SetNumber(number, 25);
+        baseBody.Turn(Direction.FOLLOW);
     }
 
     public virtual void RemoveBody(BaseBody body)
@@ -77,6 +97,6 @@ public class LinePlayer : MonoBehaviour {
 
     public void Record()
     {
-        recorder.Add(new PathRecorder(transform.position, head.dir));
+        recorder.Add(new PathRecorder(head.transform.position, head.dir));
     }
 }
