@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Rockman : EnemyBody {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public override void Init()
+    {
+        base.Init();
+    }
+    public override void OnAttack()
+    {
+        base.OnAttack();
+    }
 }
