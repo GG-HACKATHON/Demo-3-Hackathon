@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DialogGamePause : MonoBehaviour {
 
+    public Toggle sound;
+    public Toggle music;
 	public void onClickResume()
     { }
     public void onClickExit()
