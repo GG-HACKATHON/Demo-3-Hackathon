@@ -8,10 +8,13 @@ public class PandaAttack : BaseAttack {
 
     private float offset;
 
+    private SpriteRenderer renderer;
+
     // Use this for initialization
 	void Start () {
         offset = 0.4f;
-        player = transform.parent.GetComponent<BaseBody>();
+        renderer = GetComponent<SpriteRenderer>();
+        player = transform.parent.gameObject.GetComponent<BaseBody>();
         Init(5);
 	}
 	
@@ -33,19 +36,24 @@ public class PandaAttack : BaseAttack {
 
     void UpdatePosition()
     {
-        switch(player.dir)
+        Debug.Log(player.dir);
+         switch(player.dir)
         {
             case Direction.DOWN:
+                renderer.sortingOrder = 1;
                 transform.position = player.gameObject.transform.position + new Vector3(0, -offset, 0);
                 break;
             case Direction.UP:
+                renderer.sortingOrder = 0;
                 transform.position = player.gameObject.transform.position + new Vector3(0, offset, 0);
                 break;
             case Direction.LEFT:
-                this.transform.position = player.gameObject.transform.position + new Vector3(-offset, 0, 0);
+                renderer.sortingOrder = 1;
+                this.transform.position = player.gameObject.transform.position + new Vector3(-offset - 0.2f, 0, 0);
                 break;
             case Direction.RIGHT:
-                this.transform.position = player.gameObject.transform.position + new Vector3(offset, 0, 0);
+                renderer.sortingOrder = 1;
+                this.transform.position = player.gameObject.transform.position + new Vector3(offset + 0.2f, 0, 0);
                 break;
         }
     }

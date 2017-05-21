@@ -20,7 +20,7 @@ public class BaseBody : MonoBehaviour {
     private int number;
     public List<PathRecorder> recorder = null;
 
-    public Animator anim;
+    protected Animator anim;
 
     private delegate void Action();
     private Action Move;
