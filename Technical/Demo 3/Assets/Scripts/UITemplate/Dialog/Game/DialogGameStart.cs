@@ -6,10 +6,12 @@ public class DialogGameStart : BaseDialog {
 
 	public void onClickPlayGame()
     {
-        this.OnHide();
+        Application.LoadLevel("PauseGame");
+        //SceneManager.
+
     }
     public void onClickSeting()
     {
-        DialogManager.Instance.ShowDialog <DialogGameSeting>("Dialog/Portrait/GameSetting");
+        DialogManager.Instance.ShowDialog <DialogGameSetting>("Prefabs/UI/Setting");
     }
 }

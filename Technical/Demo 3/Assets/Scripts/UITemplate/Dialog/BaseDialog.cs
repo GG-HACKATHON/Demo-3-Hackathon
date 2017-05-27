@@ -11,6 +11,7 @@ public class BaseDialog : MonoBehaviour {
         this.transform.SetParent(transf);
         this.transform.localScale = Vector3.one;
         this.transform.localPosition = Vector3.zero;
+        ((RectTransform)this.transform).sizeDelta = Vector3.zero;
         this.transform.SetAsLastSibling();
         this.data = data;
     }
